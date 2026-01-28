@@ -10,13 +10,13 @@ import { initializeAuth, getReactNativePersistence } from "firebase/auth";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCWQbnkAGOg3a6SqAZQqUilDGSw3_HlHpI",
-  authDomain: "filmverse.firebaseapp.com",
-  projectId: "filmverse",
-  storageBucket: "filmverse.appspot.com",
-  messagingSenderId: "841456764478",
-  appId: "1:841456764478:web:9cc482fcbce776f0fe336f",
-  measurementId: "G-LFSYZT7DFH",
+  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
